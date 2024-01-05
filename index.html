@@ -34,14 +34,50 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Analog Sensor" style="width:100%">
+    <div class="w3-half">
+      <img src="TiH-IoT_Pictures/resistive.jpeg" alt="Analog Sensor" style="width:100%">
       <h3>Analog Resistor/sensor value:</h3>
+     <input type="file" name="inputfile" id="inputfile">
+    <br>
+ 
+    <pre id="output"></pre>
+ 
+    <script type="text/javascript">
+        document.getElementById('inputfile')
+            .addEventListener('change', function () {
+ 
+                let fr = new FileReader();
+                fr.onload = function () {
+                    document.getElementById('output')
+                        .textContent = fr.result;
+                }
+ 
+                fr.readAsText(this.files[0]);
+            })
+    </script>
     
     </div>
-    <div class="w3-quarter">
-      <img src="/w3images/steak.jpg" alt="Capacitor Sensor" style="width:100%">
+    <div class="w3-half">
+      <img src="TiH-IoT_Pictures/capacitor.jpeg" alt="Capacitor Sensor" style="width:100%">
       <h3>Capacitor sensor value: </h3>
+ <input type="file" name="inputfile" id="inputfile">
+    <br>
+ 
+    <pre id="output"></pre>
+ 
+    <script type="text/javascript">
+        document.getElementById('inputfile')
+            .addEventListener('change', function () {
+ 
+                let fr = new FileReader();
+                fr.onload = function () {
+                    document.getElementById('output')
+                        .textContent = fr.result;
+                }
+ 
+                fr.readAsText(this.files[0]);
+            })
+    </script>
   
     </div>
     
@@ -50,18 +86,72 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter">
-      <img src="/w3images/popsicle.jpg" alt="Temperature" style="width:100%">
+      <img src="TiH-IoT_Pictures/temperature.png" alt="Temperature" style="width:100%">
       <h3>Temperature: </h3>
+    <input type="file" name="inputfile" id="inputfile">
+    <br>
+ 
+    <pre id="output"></pre>
+ 
+    <script type="text/javascript">
+        document.getElementById('inputfile')
+            .addEventListener('change', function () {
+ 
+                let fr = new FileReader();
+                fr.onload = function () {
+                    document.getElementById('output')
+                        .textContent = fr.result;
+                }
+ 
+                fr.readAsText(this.files[0]);
+            })
+    </script>
       
     </div>
     <div class="w3-quarter">
-      <img src="/w3images/salmon.jpg" alt="Pressure" style="width:100%">
+      <img src="TiH-IoT_Pictures/pressure.jpeg" alt="Pressure" style="width:100%">
       <h3>Pressure: </h3>
+    <input type="file" name="inputfile" id="inputfile">
+    <br>
+ 
+    <pre id="output"></pre>
+ 
+    <script type="text/javascript">
+        document.getElementById('inputfile')
+            .addEventListener('change', function () {
+ 
+                let fr = new FileReader();
+                fr.onload = function () {
+                    document.getElementById('output')
+                        .textContent = fr.result;
+                }
+ 
+                fr.readAsText(this.files[0]);
+            })
+    </script>
 
     </div>
     <div class="w3-quarter">
-      <img src="/w3images/sandwich.jpg" alt="Humidity" style="width:100%">
+      <img src="TiH-IoT_Pictures/humidity.png" alt="Humidity" style="width:100%">
       <h3>Humidity: </h3>
+ <input type="file" name="inputfile" id="inputfile">
+    <br>
+ 
+    <pre id="output"></pre>
+ 
+    <script type="text/javascript">
+        document.getElementById('inputfile')
+            .addEventListener('change', function () {
+ 
+                let fr = new FileReader();
+                fr.onload = function () {
+                    document.getElementById('output')
+                        .textContent = fr.result;
+                }
+ 
+                fr.readAsText(this.files[0]);
+            })
+    </script>
     </div>
     
   </div>
